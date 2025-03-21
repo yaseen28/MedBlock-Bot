@@ -1,0 +1,8 @@
+streamlit
+streamlit-chat
+langchain
+llama-cpp-python
+torch
+web3
+PyPDF2
+pymupdf
