@@ -79,12 +79,12 @@ b. Connect MetaMask to Ganache:
 c. Open MetaMask → Click on Networks → Add a Network Manually.
 
 d. Enter the following:
-''''
-Network Name: Ganache Local
-New RPC URL: http://127.0.0.1:8545
-Chain ID: 1337
-Currency Symbol: ETH
-''''
+```
+- Network Name: Ganache Local
+- New RPC URL: http://127.0.0.1:8545
+- 2Chain ID: 1337
+- Currency Symbol: ETH
+```
 e. Click Save.
 
 ### Import Test Accounts from Ganache:
@@ -123,12 +123,12 @@ Ensure Ganache is running.
 
 ##### 2. Configure Environment Variables in the MedBlock-Bot_Script.py
 
-''''
+```
 w3 = Web3(Web3.HTTPProvider("HTTP://172.22.96.243:8545")) #replace this also based on local BC Ganache software
 contract_address = "0xYourDeployedContractAddress"
 sender_address = '0xYourtestETHwalletaddress'
 private_key = "0xYourtestETHwalletprivatekey"  # Replace with actual private key from metamask IT SHOULD BE TESTNETWORK!!!!!!!
-''''
+```
 
 #### 2. Run the MedBlock-Bot
 
