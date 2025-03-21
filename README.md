@@ -62,8 +62,6 @@ pip install -r requirements.txt
 
 The model used for our experiment are BioMistral, HippoMistral and Llama 3.1. 
 
-   NOTE!! Please ensure that you rename the model file to match the name listed in the 'Select Model' dropdown in the browser. 
-
 ------------------------------------------------------------------------------
 Setting Up Blockchain Environment<br/>
 ------------------------------------------------------------------------------
