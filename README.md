@@ -24,7 +24,7 @@ Traditional LLMs often **deviate from expert consensus** or provide **outdated**
 ✅ **Interactive Dual-Mode Dashboard**  
    - **Clinician Mode:** View and validate AI-generated medical responses.  
    - **Developer Mode:** Access structured feedback for **AI model refinement**.
-   - 
+      
 This research **paves the way** for **reliable, evolving AI-driven clinical decision support systems** that ensure **trust, accountability, and knowledge retention**.
 
 ------------------------------------------------------------------------------
@@ -88,7 +88,7 @@ e. Click Save.
 ### Import Test Accounts from Ganache:
 
 a. In Ganache, go to Accounts → Click on a Private Key → Copy it.
-b. bOpen MetaMask → Import Account → Paste the Private Key.
+b. Open MetaMask → Import Account → Paste the Private Key.
 c. Now you have ETH for testing transactions.
 
 ------------------------------------------------------------------------------
