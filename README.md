@@ -70,7 +70,7 @@ b. Start Ganache and create a new workspace.
 c. Copy the RPC URL (e.g., http://127.0.0.1:8545).
 
 #### 2. Configure MetaMask
-a. Install the MetaMask Extension depends on your browser [Download Here] (https://metamask.io/).
+a. Install the MetaMask Extension depends on your browser [Download Here](https://metamask.io/).
 
 b. Connect MetaMask to Ganache:
 
