@@ -19,8 +19,6 @@ def initialize_web3():
         st.error("Failed to connect to the Ethereum network.")
     return w3
 
-#sender_address = ""  # Replace with an account that has ETH (Refer MetaMask)
-
 
 # Initialize Web3 connection (call this function)
 w3 = initialize_web3()
@@ -99,7 +97,7 @@ def check_balance(sender_address):
 def submit_feedback_to_blockchain(query, model_response, corrected_response, clinician_name, score):
     if w3.is_connected():
         sender_address = ''  # Replace with actual sender address
-        private_key = ""  # Replace with actual private key from metamask
+        private_key = ""  # Replace with actual private key from metamask  IT SHOULD BE TESTNETWORK!!!!!!!
 
         balance = check_balance(sender_address)
         if balance < w3.to_wei(0.01, 'ether'):
