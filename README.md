@@ -10,27 +10,34 @@ Affiliation: Peter L. Reichertz Institute for Medical Informatics, TU Braunschwe
 Traditional LLMs often **deviate from expert consensus** or provide **outdated** responses. MedBlock-Bot enhances trust in AI-generated clinical knowledge by **securing expert feedback on a permissioned blockchain**.  
 
 ### **Key Contributions:**  
-✅ **RAG-Driven Clinical Query Processing**  
+**RAG-Driven Clinical Query Processing**  
    - Enhances **LLM response accuracy** by retrieving clinical guidelines before generating answers.
 
-✅ **Evaluation of Open-Source Medical LLMs**  
+**Evaluation of Open-Source Medical LLMs**  
    - Compares **BioMistral, HippoMistral, and LLaMa 3.1** in interpreting **Hypoplastic Left Heart Syndrome (HLHS) guidelines** [DOI](https://academic.oup.com/ejcts/article/58/3/416/5898365) .  
    - Assesses adherence to clinical best practices through **expert validation**.
 
-✅ **Blockchain-Based Feedback Storage**  
+**Blockchain-Based Feedback Storage**  
    - Implements a **permissioned blockchain** to store **clinician feedback securely**.  
    - Ensures **auditability and immutability** of expert assessments.
 
-✅ **Smart Contract Execution & Feedback Simulation**  
+**Smart Contract Execution & Feedback Simulation**  
    - Simulates **clinician feedback submission** with **corrected responses, ratings, and clinician identifiers**.  
    - Analyzes **gas usage, transaction efficiency**, and **smart contract execution** in a **local Ethereum test environment (Ganache)**.
 
-✅ **Interactive Dual-Mode Dashboard**  
+**Interactive Dual-Mode Dashboard**  
    - **Clinician Mode:** View and validate AI-generated medical responses.  
    - **Developer Mode:** Access structured feedback for **AI model refinement**.
       
 This research **paves the way** for **reliable, evolving AI-driven clinical decision support systems** that ensure **trust, accountability, and knowledge retention**.
 
+## **Features**  
+✅ AI chatbot with **medical context awareness**  
+✅ **Immutable blockchain-based expert feedback storage**  
+✅ **PDF document extraction** for improved LLM context  
+✅ **Web3-integrated Developer & Clinician dashboard**  
+✅ **Real-time Ethereum transaction tracking**  
+---
 ------------------------------------------------------------------------------
 MedBlock-Bot:<br/> Installation Guide Using Anaconda
 ------------------------------------------------------------------------------
@@ -98,7 +105,7 @@ Deploying Smart Contract<br/>
 ------------------------------------------------------------------------------
 
 #### 1. Use Remix IDE
-a. Open Remix IDE [lINK](https://remix.ethereum.org/).
+a. Open Remix IDE [LINK](https://remix.ethereum.org/).
 b. Create a new file → Paste the Solidity smart contract code from MedBlock_SC.sol.
 c. Compile the contract (0.8.x Solidity Compiler).
 
@@ -107,14 +114,6 @@ c. Compile the contract (0.8.x Solidity Compiler).
 > Environment: Select Injected Web3 → Connect MetaMask.
 > Deploy the contract → Copy the Contract Address
 
-#### 2. Update Contract Details in script.py
-Replace the placeholders in script.py:
-
-```
-contract_address = "YOUR_DEPLOYED_CONTRACT_ADDRESS"
-with open("abi.json", "r") as file:
-    contract_abi = json.load(file)
-```
 ------------------------------------------------------------------------------
 Running the Application<br/>
 ------------------------------------------------------------------------------ 
@@ -128,6 +127,11 @@ w3 = Web3(Web3.HTTPProvider("HTTP://172.22.96.243:8545")) #replace this also bas
 contract_address = "0xYourDeployedContractAddress"
 sender_address = '0xYourtestETHwalletaddress'
 private_key = "0xYourtestETHwalletprivatekey"  # Replace with actual private key from metamask IT SHOULD BE TESTNETWORK!!!!!!!
+```
+Ensure abi.json file location:
+```
+with open("abi.json", "r") as file:
+    contract_abi = json.load(file)
 ```
 
 #### 2. Run the MedBlock-Bot
