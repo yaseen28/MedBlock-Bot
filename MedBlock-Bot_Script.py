@@ -19,7 +19,7 @@ def initialize_web3():
         st.error("Failed to connect to the Ethereum network.")
     return w3
 
-#sender_address = "0xde4Eb78c5B90448146d3248b11dfAEf20016D31f"  # Replace with an account that has ETH
+#sender_address = ""  # Replace with an account that has ETH (Refer MetaMask)
 
 
 # Initialize Web3 connection (call this function)
@@ -28,7 +28,7 @@ w3 = initialize_web3()
 # Load contract ABI and address
 with open("abi.json", "r") as file:   #copy this from remix IDE-> compiler option, see below compilatiton details -> ABI
     contract_abi = json.load(file)
-contract_address = '0xDbBE3E4706DF57CECb6b817ccB623e6EC787AfC4'
+contract_address = '' # Replace with deployed contract address from RemixIDE
 contract = w3.eth.contract(address=contract_address, abi=contract_abi)
 
 
@@ -98,8 +98,8 @@ def check_balance(sender_address):
 # Submit feedback to the blockchain
 def submit_feedback_to_blockchain(query, model_response, corrected_response, clinician_name, score):
     if w3.is_connected():
-        sender_address = '0x488C90dA346EFbAb0451dF95Dc09BdD16c3fe091'  # Replace with actual sender address
-        private_key = "0x4a92b200b70c78f25067a45966ad444d058e007aed1a1aaeb35c5505a8a20b02"  # Replace with actual private key from metamask
+        sender_address = ''  # Replace with actual sender address
+        private_key = ""  # Replace with actual private key from metamask
 
         balance = check_balance(sender_address)
         if balance < w3.to_wei(0.01, 'ether'):
