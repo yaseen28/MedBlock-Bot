@@ -1,9 +1,9 @@
-Repository for IEEE CBMS 2025 Submission
-This repository contains the implementation of our regular paper submitted to the IEEE CBMS 2025 Submission.
+## **Repository for IEEE CBMS 2025 Submission**
+## This repository contains the implementation of our regular paper submitted to the IEEE CBMS 2025 Submission.
 
-MedBlock-Bot: A Blockchain-Enabled RAG System for Providing Feedback to Large Language Models Accessing Pediatric Clinical Guidelines<br/> 
-Authors: Mohamed Yaseen Jabarulla, Steffen Oeltze-Jafra, Philipp Beerbaum, Theodor Uden
-Affiliation: Peter L. Reichertz Institute for Medical Informatics, TU Braunschweig & Hannover Medical School
+- MedBlock-Bot: A Blockchain-Enabled RAG System for Providing Feedback to Large Language Models Accessing Pediatric Clinical Guidelines<br/> 
+- Authors: Mohamed Yaseen Jabarulla, Steffen Oeltze-Jafra, Philipp Beerbaum, Theodor Uden
+- Affiliation: Peter L. Reichertz Institute for Medical Informatics, TU Braunschweig & Hannover Medical School
 
 ## **About the Paper**  
 **MedBlock-Bot** is a **blockchain-enabled Retrieval-Augmented Generation (RAG) system** designed to assist clinicians by providing **expert-validated AI responses** to medical queries.  
