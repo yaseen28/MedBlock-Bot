@@ -11,16 +11,16 @@ Traditional LLMs often **deviate from expert consensus** or provide **outdated**
 
 ### **Key Contributions:**  
 ✅ **RAG-Driven Clinical Query Processing**  
-   - Enhances **LLM response accuracy** by retrieving clinical guidelines before generating answers.  
+   - Enhances **LLM response accuracy** by retrieving clinical guidelines before generating answers.
 ✅ **Evaluation of Open-Source Medical LLMs**  
    - Compares **BioMistral, HippoMistral, and LLaMa 3.1** in interpreting **Hypoplastic Left Heart Syndrome (HLHS) guidelines** [DOI](https://academic.oup.com/ejcts/article/58/3/416/5898365) .  
-   - Assesses adherence to clinical best practices through **expert validation**.  
+   - Assesses adherence to clinical best practices through **expert validation**.
 ✅ **Blockchain-Based Feedback Storage**  
    - Implements a **permissioned blockchain** to store **clinician feedback securely**.  
-   - Ensures **auditability and immutability** of expert assessments.  
+   - Ensures **auditability and immutability** of expert assessments.
 ✅ **Smart Contract Execution & Feedback Simulation**  
    - Simulates **clinician feedback submission** with **corrected responses, ratings, and clinician identifiers**.  
-   - Analyzes **gas usage, transaction efficiency**, and **smart contract execution** in a **local Ethereum test environment (Ganache)**.  
+   - Analyzes **gas usage, transaction efficiency**, and **smart contract execution** in a **local Ethereum test environment (Ganache)**.
 ✅ **Interactive Dual-Mode Dashboard**  
    - **Clinician Mode:** View and validate AI-generated medical responses.  
    - **Developer Mode:** Access structured feedback for **AI model refinement**.
